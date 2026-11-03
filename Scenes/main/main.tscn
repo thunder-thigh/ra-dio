@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cxco1hq1dqcul"]
+
+[ext_resource type="Script" uid="uid://njss0s87cagu" path="res://Scenes/main/main.gd" id="1_b20jg"]
+
+[node name="main" type="Control" unique_id=1186270944]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b20jg")
+
+[node name="SceneLoad" type="Control" parent="." unique_id=510666379]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Load Testing Planet" type="Button" parent="SceneLoad" unique_id=218123818]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 333.0
+offset_right = 457.0
+offset_bottom = 364.0
+text = "Load Ship"
+
+[node name="Load City Planet" type="Button" parent="SceneLoad" unique_id=807296555]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 329.0
+offset_right = 749.0
+offset_bottom = 360.0
+text = "Load City Planet"
+
+[node name="EscapeMenu" type="Control" parent="." unique_id=1300932270]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="SceneLoad/Load Testing Planet" to="." method="_on_load_testing_planet_pressed"]
+[connection signal="pressed" from="SceneLoad/Load City Planet" to="." method="_on_load_city_planet_pressed"]

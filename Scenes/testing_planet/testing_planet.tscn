@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://gnhh48eoqbm2"]
+
+[ext_resource type="Script" uid="uid://cx3m6nq8rd8rg" path="res://Scenes/testing_planet/testing_planet.gd" id="1_vahsn"]
+[ext_resource type="Texture2D" uid="uid://bwfglnecbcln1" path="res://World_assets/earthlike_planet_close.hdr" id="2_ptrjd"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3fa81"]
+panorama = ExtResource("2_ptrjd")
+filter = false
+energy_multiplier = 10.0
+
+[sub_resource type="Sky" id="Sky_c5ike"]
+sky_material = SubResource("PanoramaSkyMaterial_3fa81")
+
+[sub_resource type="Environment" id="Environment_71e4p"]
+background_mode = 2
+background_energy_multiplier = 5.69
+sky = SubResource("Sky_c5ike")
+ambient_light_source = 3
+
+[node name="test_planet" type="Node3D" unique_id=1592971289]
+script = ExtResource("1_vahsn")
+
+[node name="Ships" type="Node3D" parent="." unique_id=400414095]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1643194972]
+environment = SubResource("Environment_71e4p")
