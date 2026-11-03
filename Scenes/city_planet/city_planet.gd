@@ -8,11 +8,11 @@ var active_object: int
 var _camera_pivot: Node3D
 
 # random block placement
-@export var INITIAL_DEBRIS_COUNT: int = 150
-@export var MAX_DEBRIS_COUNT: int = 150
+@export var INITIAL_DEBRIS_COUNT: int = 1500
+@export var MAX_DEBRIS_COUNT: int = 1500
 @export var DEBRIS_MIN_DISTANCE: float = 80.0
-@export var DEBRIS_SPAWN_RADIUS: float = 10000.0
-@export var DEBRIS_DESPAWN_DISTANCE: float = 1000.0
+@export var DEBRIS_SPAWN_RADIUS: float = 2000.0
+@export var DEBRIS_DESPAWN_DISTANCE: float = 2000.0
 
 var debris_list: Dictionary = {}
 var debris_container: Node3D

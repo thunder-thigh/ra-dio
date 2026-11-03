@@ -40,7 +40,6 @@ shadow_mesh = SubResource("ArrayMesh_6tsdq")
 
 [node name="ship" type="RigidBody3D" unique_id=1987232919]
 script = ExtResource("1_3fa81")
-THROTTLE = 100000.0
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=982085138]
 unique_name_in_owner = true
